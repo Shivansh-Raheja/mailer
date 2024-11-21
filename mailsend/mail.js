@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',  // You can use other services or SMTP servers
   auth: {
-    user: 'shivanshraheja81@gmail.com', // Replace with your email address
-    pass: 'lkiz koci xhay tvzy',   // Replace with your email password
+    user: 'Fusionskills999@gmail.com', // Replace with your email address
+    pass: 'bzbf xeec gtlz aegl',   // Replace with your email password
   },
 });
 
@@ -31,8 +31,8 @@ app.post('/send-message', (req, res) => {
   // Email content
   const mailOptions = {
     from: email,             // Sender's email (user)
-    to: 'shivanshraheja81@gmail.com', // Replace with the recipient's email
-    subject: `New message from ${name}`, // Subject
+    to: 'Fusionskills999@gmail.com', // Replace with the recipient's email
+    subject: `Contact-Form submitted by-: ${name}`, // Subject
     text: `You have received a new message from ${name} (${email}):\n\n${message}`, // Body
   };
 
